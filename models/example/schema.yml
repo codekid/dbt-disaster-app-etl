@@ -19,3 +19,12 @@ models:
             tests:
                 - unique
                 - not_null
+    
+    - name: dim_event_types
+      description: "Dimension for the types of natural events"
+      columns:
+          - name: event_name
+            description: "The name of the event that orrured"
+            tests:
+              - unique
+              - not_null
